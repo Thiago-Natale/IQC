@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(105, 99, 99);
+    color: white;
+    height: 7rem;
+}
+
+.logo img {
+    position: absolute;
+    top: 0rem;
+    left: 8rem;
+    height: 180px;
+    width: 180px;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 70px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.mencao {
+    margin-bottom: 40px;
+    text-align: left;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 20px;
+    background-color: #f1ebe8;
+}
+
+.mencao p {
+    color: black;
+    line-height: 1.6;
+}
+
+.content {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.content h2 {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 15px;
+    color: rgb(255, 247, 240);
+    background-color: rgb(216, 130, 33);
+    border-radius: 12px;
+    padding: 3px;
+}
+
+.content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.voltar {
+    text-align: left;
+    margin: 10px;
+}
+
+.voltar a{
+    text-decoration: none;
+    background-color: rgb(216, 130, 33);
+    color: white;
+    padding:5px;
+    border-radius: 10px;
+}
+
+.voltar a:hover {
+    background-color: white;
+    color: rgb(216, 130, 33);
+    border: solid rgb(216, 130, 33) 1px;
+}
+
+.container iframe {
+    max-width: 100%;
+    height: 79vh;
+    border-radius: 8px;
+}
+
+.aguarde {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1ebe8;
+    justify-content: center;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.aguarde h2 {
+    font-size: 30px;
+}
+
+.aguarde p {
+    font-size: 20px;
+}
+
+.aguarde img {
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
