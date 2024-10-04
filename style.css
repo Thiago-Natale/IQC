@@ -137,13 +137,19 @@ nav ul li a {
 
 @media (max-width: 770px) {
     .prologo {
-        height: 350px; /* Ajuste para telas menores */
+        height: 620px; /* Ajuste para telas menores */
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .prologo {
-        height: 230px; /* Ajuste para telas de celulares */
+        height: 500px; /* Ajuste para telas menores */
+    }
+}
+
+@media (max-width: 490px) {
+    .prologo {
+        height: 420px; /* Ajuste para telas de celulares */
     }
 }
 
