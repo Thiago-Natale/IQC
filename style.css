@@ -73,10 +73,33 @@ nav ul li a {
     object-fit: cover; /* Corta a imagem para se ajustar ao contêiner */
 }
 
+/* Responsividade classe prologo para tablets e celulares */
+@media (max-width: 1024px) {
+    .prologo {
+        height: 300px; /* Ajuste para telas menores */
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    .prologo {
+        height: 250px; /* Ajuste para telas menores */
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    .prologo {
+        height: 200px; /* Ajuste para telas de celulares */
+        overflow: hidden;
+    }
+}
+
 /* Ajustes de responsividade para Header */
 @media (max-width: 1024px) {
     header {
         flex-direction: column;
+        height: auto;
     }
     
     .logo img {
@@ -122,21 +145,15 @@ nav ul li a {
     color: white;
 }
 
-/* Estilização da classe prologo */
-.prologo {
-    margin: 20px 0;
-}
-
 .prologo img {
     width: 100%;
     max-width: 100%;
     height: auto;
 }
 
-@media (max-width: 768px) {
-    .prologo img {
-        width: 90%;
-        margin: 0 auto;
+@media (max-width: 1024px) {
+    .prologo {
+        height: 300px; /* Ajuste para telas menores */
     }
 }
 
