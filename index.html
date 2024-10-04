@@ -31,8 +31,12 @@
         <div class="container">
             <!-- Prólogo -->
             <div class="prologo">
-                <img src="./images/prologo.png" alt="Navegue pelos diversos formatos de conteúdos pautados pelo rigor científico, mas em uma linguagem simples e objetiva. Uma variedade de assuntos e dicas práticas, incluindo temáticas específicas para a comunidade escolar.
-            A disseminação de conhecimento é determinante para desconstruir estigmas e promover a saúde mental.">
+                <picture>
+                    <!-- Imagem para telas abaixo de 760px -->
+                    <source srcset="images/prologo2.png" media="(max-width: 770px)">
+                    <!-- Imagem padrão para telas maiores -->
+                    <img src="images/prologo.png" alt="Prologo">
+                </picture>
             </div>
 
             <!-- Título -->

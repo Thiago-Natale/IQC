@@ -62,7 +62,7 @@ nav ul li a {
 }
 
 .prologo {
-    height: 350px; /* Defina a altura para cortar a imagem */
+    height: 400px; /* Altura definida para desktop */
     margin-bottom: 0;
     overflow: hidden; /* Oculta a parte excedente da imagem */
 }
@@ -70,29 +70,7 @@ nav ul li a {
 .prologo img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Corta a imagem para se ajustar ao contêiner */
-}
-
-/* Responsividade classe prologo para tablets e celulares */
-@media (max-width: 1024px) {
-    .prologo {
-        height: 300px; /* Ajuste para telas menores */
-        overflow: hidden;
-    }
-}
-
-@media (max-width: 768px) {
-    .prologo {
-        height: 250px; /* Ajuste para telas menores */
-        overflow: hidden;
-    }
-}
-
-@media (max-width: 480px) {
-    .prologo {
-        height: 200px; /* Ajuste para telas de celulares */
-        overflow: hidden;
-    }
+    object-fit: cover; /* Garante que a imagem se adapte ao contêiner */
 }
 
 /* Ajustes de responsividade para Header */
@@ -157,6 +135,18 @@ nav ul li a {
     }
 }
 
+@media (max-width: 770px) {
+    .prologo {
+        height: 350px; /* Ajuste para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .prologo {
+        height: 230px; /* Ajuste para telas de celulares */
+    }
+}
+
 /* Estilização dos cards */
 .cards-container {
     display: flex;
@@ -207,7 +197,7 @@ nav ul li a {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
     .cards-container {
         flex-direction: column;
         align-items: center;
