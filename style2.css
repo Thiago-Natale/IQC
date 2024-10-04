@@ -6,6 +6,7 @@
     font-family: "Roboto";
 }
 
+/* Estilização da Header */
 header {
     display: flex;
     justify-content: center;
@@ -17,11 +18,8 @@ header {
 }
 
 .logo img {
-    position: absolute;
-    top: 0rem;
-    left: 8rem;
-    height: 180px;
-    width: 180px;
+    height: 150px;
+    width: 150px;
     z-index: 1;
 }
 
@@ -31,17 +29,61 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 70px;
+    margin-left: 30px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 5px;
 }
+
+.menu a:hover {
+    background-color: white;
+    border-radius: 20px;
+    color: brown;
+    padding: 5px;
+}
+
 
 main {
     display: flex;
     justify-content: center;
+}
+
+/* Ajustes de responsividade para Header */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .logo img {
+        height: 120px;
+        width: 120px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 100px;
+        width: 100px;
+    }
 }
 
 .container {
