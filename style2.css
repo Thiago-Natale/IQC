@@ -187,6 +187,42 @@ main {
     height: 400px;
 }
 
+.gif {
+    height: 600px; /* Altura definida para desktop */
+    margin-bottom: 0;
+    overflow: hidden; /* Oculta a parte excedente da imagem */
+}
+
+.gif img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem se adapte ao contêiner */
+}
+
+@media (max-width: 1024px) {
+    .gif {
+        height: 400px; /* Ajuste para telas menores */
+    }
+}
+
+@media (max-width: 770px) {
+    .gif {
+        height: 400px; /* Ajuste para telas menores */
+    }
+}
+
+@media (max-width: 600px) {
+    .gif {
+        height: 300px; /* Ajuste para telas menores */
+    }
+}
+
+@media (max-width: 490px) {
+    .gif {
+        height: 200px; /* Ajuste para telas de celulares */
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         width: 90%;
