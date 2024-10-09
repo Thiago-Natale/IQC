@@ -229,7 +229,11 @@ main {
     }
 }
 
-.container-perg {   
+.container-perg {
     height: 100vh;
     width: 100vw;
+}
+
+.container-perg iframe {
+    height: 90%;
 }
