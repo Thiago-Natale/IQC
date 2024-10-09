@@ -141,6 +141,7 @@ main {
 }
 
 .voltar {
+    display: inline-block;
     text-align: left;
     margin: 10px;
 }
