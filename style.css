@@ -73,6 +73,10 @@ nav ul li a {
     object-fit: cover; /* Garante que a imagem se adapte ao contêiner */
 }
 
+.card a {
+    text-decoration: none;
+}
+
 /* Ajustes de responsividade para Header */
 @media (max-width: 1024px) {
     header {
